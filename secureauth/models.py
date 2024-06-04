@@ -22,3 +22,4 @@ class User(AbstractUser):
 class Role(models.Model):
     name = models.CharField(max_length=50, unique=True)
 
+# Workflow trigger test again

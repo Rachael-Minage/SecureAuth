@@ -16,7 +16,7 @@ jobs:
         run: docker build -t secureapp:latest .
 
       - name: Run Tests
-        run: docker run -it --rm -v $(pwd):/app secureapp:latest python manage.py test
+        run: docker run  --rm -v $(pwd):/app secureapp:latest python manage.py test
 
   merge_to_main:
     needs: build_and_test  
@@ -44,6 +44,6 @@ jobs:
         run: docker build -t secureapp:latest .
 
       - name: Run Tests (Main)
-        run: docker run --rm -v $(pwd):/app secureapp:latest python manage.py test
+        run: docker run  --rm -v $(pwd):/app secureapp:latest python manage.py test
 
   
