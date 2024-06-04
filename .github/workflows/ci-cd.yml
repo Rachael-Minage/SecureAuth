@@ -44,6 +44,6 @@ jobs:
         run: docker build -t secureapp:latest .
 
       - name: Run Tests (Main)
-        run: docker run -it --rm -v $(pwd):/app secureapp:latest python manage.py test
+        run: docker run  --rm -v $(pwd):/app secureapp:latest python manage.py test
 
   
