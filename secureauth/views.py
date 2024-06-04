@@ -32,35 +32,4 @@ class UserLoginAPIView(generics.GenericAPIView):
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
-
-
-
-# class HelloView(APIView):
-#     permission_classes = (IsAuthenticated,) 
-
-#     def get(self, request):
-#         content = {'message': 'Hello, World! You are authenticated.'}
-#         return Response(content)
-
-#Dummy View
-# class AdminAPIView(APIView):
-#     permission_classes = [IsAdminUser]
-
-#     def get(self, request):
-#         content = {'message': 'Hello Admin, Welcome!'}
-#         return Response(content)
-
-# class ParentAPIView(APIView):
-#     permission_classes = [IsParentUser]
-
-#     def get(self, request):
-#         content = {'message': 'Hello Parent, Welcome!'}
-#         return Response(content)
-
-# class TeacherAPIView(APIView):
-#     permission_classes = [IsTeacherUser]
-
-#     def get(self, request):
-#         content = {'message': 'Hello Teacher, Welcome!'}
-#         return Response(content)
+# Workflow Test Comment
